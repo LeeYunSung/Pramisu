@@ -1,2 +1,2 @@
 # Pramisu
-Praise App(iOS)
+Praise App(AOS/iOS)
