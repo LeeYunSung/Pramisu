@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  SignUpViewController.swift
 //  Pramisu
 //
-//  Created by Kyowon on 2023/09/18.
+//  Created by Kyowon on 2023/09/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,4 +16,3 @@ class ViewController: UIViewController {
 
 
 }
-
