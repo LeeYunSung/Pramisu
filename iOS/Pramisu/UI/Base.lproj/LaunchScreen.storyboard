@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,15 +17,19 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pramisu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByF-Jn-sHd">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" red="1" green="0.97254901959999995" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <color key="backgroundColor" red="0.34901960780000002" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ByF-Jn-sHd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8UJ-dY-rNI"/>
+                            <constraint firstItem="ByF-Jn-sHd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DCu-lX-cL0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ByF-Jn-sHd" secondAttribute="trailing" id="NSk-ji-qbh"/>
+                            <constraint firstItem="ByF-Jn-sHd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vbb-wG-tOz"/>
+                            <constraint firstItem="ByF-Jn-sHd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="lBr-z2-ggY"/>
                             <constraint firstItem="ByF-Jn-sHd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pVe-Lv-ka9"/>
                             <constraint firstItem="ByF-Jn-sHd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sEH-3m-3pD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByF-Jn-sHd" secondAttribute="bottom" id="sQd-wg-O6R"/>
@@ -38,9 +41,4 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
