@@ -13,7 +13,7 @@
 		C05B1FED2ABB452900AFA54D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05B1FEC2ABB452900AFA54D /* SignUpViewController.swift */; };
 		C08C00CD2AB89061002791C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C00CC2AB89061002791C6 /* AppDelegate.swift */; };
 		C08C00CF2AB89061002791C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C00CE2AB89061002791C6 /* SceneDelegate.swift */; };
-		C08C00D12AB89061002791C6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C00D02AB89061002791C6 /* SignInViewController.swift */; };
+		C08C00D12AB89061002791C6 /* MakingQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08C00D02AB89061002791C6 /* MakingQuestViewController.swift */; };
 		C08C00D42AB89061002791C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C00D22AB89061002791C6 /* Main.storyboard */; };
 		C08C00D62AB89062002791C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08C00D52AB89062002791C6 /* Assets.xcassets */; };
 		C08C00D92AB89062002791C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08C00D72AB89062002791C6 /* LaunchScreen.storyboard */; };
@@ -27,7 +27,7 @@
 		C08C00C92AB89061002791C6 /* Pramisu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pramisu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08C00CC2AB89061002791C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08C00CE2AB89061002791C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C08C00D02AB89061002791C6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C08C00D02AB89061002791C6 /* MakingQuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingQuestViewController.swift; sourceTree = "<group>"; };
 		C08C00D32AB89061002791C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C08C00D52AB89062002791C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Pramisu/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		C08C00D82AB89062002791C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		C08C00E32AB89B00002791C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C08C00D02AB89061002791C6 /* SignInViewController.swift */,
+				C08C00D02AB89061002791C6 /* MakingQuestViewController.swift */,
 				C05B1FE82ABB42F800AFA54D /* MainViewController.swift */,
 				C05B1FEA2ABB44F400AFA54D /* WelcomeViewController.swift */,
 				C05B1FEC2ABB452900AFA54D /* SignUpViewController.swift */,
@@ -184,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C05B1FED2ABB452900AFA54D /* SignUpViewController.swift in Sources */,
-				C08C00D12AB89061002791C6 /* SignInViewController.swift in Sources */,
+				C08C00D12AB89061002791C6 /* MakingQuestViewController.swift in Sources */,
 				C05B1FEB2ABB44F400AFA54D /* WelcomeViewController.swift in Sources */,
 				C08C00CD2AB89061002791C6 /* AppDelegate.swift in Sources */,
 				C08C00CF2AB89061002791C6 /* SceneDelegate.swift in Sources */,
