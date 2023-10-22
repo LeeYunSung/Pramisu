@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "users.png",
+      "filename" : "bell_off_dark.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,6 +12,7 @@
           "value" : "light"
         }
       ],
+      "filename" : "bell_off_dark-1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -22,6 +23,7 @@
           "value" : "dark"
         }
       ],
+      "filename" : "bell_off_light.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
