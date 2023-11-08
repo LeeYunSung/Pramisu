@@ -6,6 +6,10 @@
 //
 
 import UIKit
+import KakaoSDKCommon
+import KakaoSDKAuth
+import KakaoSDKUser
+
 
 class WellcomeViewController: UIViewController {
 
@@ -14,6 +18,22 @@ class WellcomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func loginWithKakao(_ sender: UIButton) {
+        // 카카오톡 실행 가능 여부 확인
+        if (UserApi.isKakaoTalkLoginAvailable()) {
+            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoTalk() success.")
 
+                    //do something
+                    _ = oauthToken
+                }
+            }
+        }
+    }
+    
 }
 
