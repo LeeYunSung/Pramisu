@@ -6,21 +6,23 @@
 //
 
 import UIKit
+
 import FirebaseCore
+import FirebaseFirestore
+
 import KakaoSDKCommon
 import KakaoSDKAuth
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
-       // let NATIVE_APP_KEY = "fd19cfbb6324d2d61e376dfc5499f5d3"
-      //  let FACEBOOK_APP_KEY = ""
+        let NATIVE_APP_KEY = "fd19cfbb6324d2d61e376dfc5499f5d3"
         
-       // FirebaseApp.configure()
-        KakaoSDK.initSDK(appKey: "fd19cfbb6324d2d61e376dfc5499f5d3")
+        FirebaseApp.configure()
+        KakaoSDK.initSDK(appKey: "\(NATIVE_APP_KEY)")
         
         return true
     }

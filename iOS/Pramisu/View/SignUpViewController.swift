@@ -7,12 +7,13 @@
 
 import UIKit
 
+
 class SignUpViewController: UIViewController {
 
+    var userId: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("UserId: \(String(describing: userId))")
     }
-
-
 }
