@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LiU-kd-TfF">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,35 +17,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pramisu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-wL-OFo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pramisu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbw-wL-OFo">
                                 <rect key="frame" x="139" y="291" width="137" height="43"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="FXp-6e-nz9"/>
+                                    <constraint firstAttribute="width" constant="137" id="u6g-iw-pfk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" name="ButtonColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry6-mY-fbh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry6-mY-fbh">
                                 <rect key="frame" x="87" y="474" width="240" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="DZg-7x-i8d"/>
+                                    <constraint firstAttribute="width" constant="240" id="ff1-ZA-fCa"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="         카카오 로그인">
+                                <buttonConfiguration key="configuration" style="filled" title="Login">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.99607843137254903" green="0.89803921568627454" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginWithKakao:" destination="BYZ-38-t0r" eventType="touchDown" id="D8U-gw-OyB"/>
-                                    <segue destination="LiU-kd-TfF" kind="show" id="ecj-a7-cUX"/>
+                                    <segue destination="LiU-kd-TfF" kind="show" identifier="goToSignUp" id="ecj-a7-cUX"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kakao_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zh7-uO-2AC">
-                                <rect key="frame" x="106" y="487" width="33" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jbw-wL-OFo" secondAttribute="trailing" constant="138" id="3Oh-QK-M9m"/>
+                            <constraint firstItem="Ry6-mY-fbh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="5cy-BJ-HAn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ry6-mY-fbh" secondAttribute="trailing" constant="87" id="Heg-M9-cHS"/>
+                            <constraint firstItem="Jbw-wL-OFo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="243" id="RTC-ga-hsI"/>
+                            <constraint firstItem="Jbw-wL-OFo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="gp6-1a-wpO"/>
+                            <constraint firstItem="Ry6-mY-fbh" firstAttribute="top" secondItem="Jbw-wL-OFo" secondAttribute="bottom" constant="140" id="vGj-h4-FR5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,27 +70,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAv-e0-SRk">
+                            <textField autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAv-e0-SRk">
                                 <rect key="frame" x="107" y="482" width="200" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="WJw-ub-atg"/>
+                                    <constraint firstAttribute="width" constant="200" id="k2Y-CZ-7Mp"/>
+                                </constraints>
                                 <color key="textColor" name="ButtonColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6y-oa-pOt">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e6y-oa-pOt">
                                 <rect key="frame" x="142" y="332" width="131" height="131"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ButtonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="131" id="iHb-Sf-w6P"/>
+                                    <constraint firstAttribute="width" constant="131" id="lsp-4S-glY"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pramisu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-XS-QlH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pramisu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rep-XS-QlH">
                                 <rect key="frame" x="139" y="264" width="137" height="43"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="2Ym-hx-2gA"/>
+                                    <constraint firstAttribute="height" constant="43" id="HCO-rn-Jk0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" name="ButtonColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZE-C8-8YR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZE-C8-8YR">
                                 <rect key="frame" x="87" y="573" width="240" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BUM-P5-Kya"/>
+                                    <constraint firstAttribute="width" constant="240" id="yv6-8M-rsK"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="가입하기">
@@ -88,12 +111,32 @@
                                     <color key="baseForegroundColor" name="BackgroundColor"/>
                                     <color key="baseBackgroundColor" name="ButtonColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signUp:" destination="LiU-kd-TfF" eventType="touchUpInside" id="Xxy-3B-zXq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p2B-aV-fED"/>
                         <color key="backgroundColor" name="BackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p2B-aV-fED" firstAttribute="trailing" secondItem="dAv-e0-SRk" secondAttribute="trailing" constant="107" id="1Dx-v2-cID"/>
+                            <constraint firstItem="p2B-aV-fED" firstAttribute="trailing" secondItem="Rep-XS-QlH" secondAttribute="trailing" constant="138" id="1ez-h9-2NC"/>
+                            <constraint firstItem="tZE-C8-8YR" firstAttribute="top" secondItem="dAv-e0-SRk" secondAttribute="bottom" constant="31" id="1wU-G1-BDM"/>
+                            <constraint firstItem="tZE-C8-8YR" firstAttribute="leading" secondItem="p2B-aV-fED" secondAttribute="leading" constant="87" id="7a8-Ex-lrY"/>
+                            <constraint firstItem="e6y-oa-pOt" firstAttribute="leading" secondItem="p2B-aV-fED" secondAttribute="leading" constant="142" id="GTe-Gk-g3q"/>
+                            <constraint firstItem="e6y-oa-pOt" firstAttribute="top" secondItem="Rep-XS-QlH" secondAttribute="bottom" constant="25" id="ISx-df-Ol9"/>
+                            <constraint firstItem="dAv-e0-SRk" firstAttribute="leading" secondItem="p2B-aV-fED" secondAttribute="leading" constant="107" id="P5O-ez-ufA"/>
+                            <constraint firstItem="p2B-aV-fED" firstAttribute="trailing" secondItem="e6y-oa-pOt" secondAttribute="trailing" constant="141" id="Uug-ns-P7q"/>
+                            <constraint firstItem="dAv-e0-SRk" firstAttribute="top" secondItem="e6y-oa-pOt" secondAttribute="bottom" constant="19" id="VkT-HY-jF6"/>
+                            <constraint firstItem="Rep-XS-QlH" firstAttribute="top" secondItem="p2B-aV-fED" secondAttribute="top" constant="264" id="bQI-gu-UKh"/>
+                            <constraint firstItem="p2B-aV-fED" firstAttribute="trailing" secondItem="tZE-C8-8YR" secondAttribute="trailing" constant="87" id="vb7-JK-Nvz"/>
+                            <constraint firstItem="Rep-XS-QlH" firstAttribute="leading" secondItem="p2B-aV-fED" secondAttribute="leading" constant="139" id="vvk-Z7-twF"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="neP-um-qi2"/>
+                    <connections>
+                        <outlet property="profileImage" destination="e6y-oa-pOt" id="lO6-Bv-qg6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkj-SV-BiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +332,6 @@
         <image name="add" width="42.5" height="42.5"/>
         <image name="home_off" width="42.5" height="42.5"/>
         <image name="home_on" width="42.5" height="42.5"/>
-        <image name="kakao_logo" width="38" height="35"/>
         <image name="users_off" width="42.5" height="42.5"/>
         <image name="users_on" width="42.5" height="42.5"/>
         <namedColor name="BackgroundColor">
